@@ -41,4 +41,18 @@ const actors = [
     photo:
       "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/4555/original/Gerard-Butler.jpg",
   },
+  {
+    id: 7,
+    name: "",
+    birthdate: "November 13, 1969",
+    photo:
+      "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/4555/original/Gerard-Butler.jpg",
+  },
+  {
+    id: 8,
+    name: "Tom Rot",
+    birthdate: "",
+    photo:
+      "",
+  },
 ];

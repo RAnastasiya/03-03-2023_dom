@@ -1,16 +1,10 @@
 "use strict";
 
-const handlerBtn = ({
-  target: {
-    parentElement: parent,
-    dataset: { bgColor },
-  },
-}) => {
-  parent.style.backgroundColor = bgColor;
-};
+const cardsContainer = document.getElementById("cardsContainer");
+const cardsHTML = actors
+  .filter((actor) => actor.name && actor.photo && actor.birthdate)
+  .map((actor) => createActorCard(actor));
 
-const btns = document.querySelectorAll("#wrapper>button");
+cardsContainer.append(...cardsHTML);
 
-for (const btn of btns) {
-  btn.addEventListener("click", handlerBtn);
-}
+
